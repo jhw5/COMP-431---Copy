@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	
+
+	<script>
+		function validateForm(){
+			var s = document.getElementsByName("size");
+			var c = -1
+
+			for(var i=0; i < s.length; i++){
+			   if(s[i].checked) {
+			      c = i; 
+			   }
+			}
+			if (c == -1) {
+				alert("please choose pizza size");
+				return false;
+			}
+
+		}
+	</script>
+	</head>
+	<body>
+	<h1>Pizza Guys Order Form </h1>
+	<img src="pizza.jpg">
+		<form id="myForm" onsubmit="return validateForm()" method="GET" action="formProcessor.html">
+			<p>Name <br><input type="text" name="name" required=""></p>
+			<p>Address: #### Street Name <br><input type="" pattern="\d*.(.*)"></p>
+			<p>Phone Number 123-123-1234 <br><input type="phone" pattern="\d\d\d[\-]\d\d\d[\-]\d\d\d\d"></p>
+			<p>Pizza size <br>
+			<input type="radio" name="size" value="large" >Large
+			<input type="radio" name="size" value="medium">Medium
+			<input type="radio" name="size" value="small">Small
+			</p>
+			<p>Pizza Toppings <br>
+			<input type="checkbox" name="toppings" value="sausage">Sausage
+			<input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+			<input type="checkbox" name="toppings" value="olives">Olives
+			<input type="checkbox" name="toppings" value="anchovies">Anchovies
+			<input type="checkbox" name="toppings" value="onions">Onions
+			</p>
+
+			<input type="submit" value="Place Order">
+			<input type="submit" value="Clear">
+			
+		</form>
+	</body>
+</html>

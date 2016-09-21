@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="avoid.js"></script>
+    <style>
+        button{
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #congratulations{
+            display:None;
+            width:200px;
+            height:70px;
+            background-color:greenyellow;
+            text-align: center;
+            border:solid red;
+            border-width: thick;
+            color:blue;
+            border-radius:5%;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body id="move">
+    <button onmouseover="movingButt()" onclick="congratulations()" id="button">Click Me</button>
+    <span id="congratulations">
+        <p>Congratulations! </p>
+        <p>You Won!</p>
+    </span>
+
+</body>
+</html>

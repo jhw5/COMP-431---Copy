@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "eng-US">
+<head>
+Hi! My name is Jeffrey!
+<style>
+
+img {height:10%;width:10%;}
+</style>
+
+	<script>
+		function clearText(){
+			var message = document.getElementsById("textArea");
+			message.value = "";
+		}
+	</script>
+</head>
+<body>
+	<img src="me.jpg">
+
+	<h1>A little bit about myself...</h1>
+	<p>
+	I was born in Taiwan, but I grew up in Vancouver, Canada. I am a rising Junior and just transferred to Computer Science last semester. I love travelling and playing tennis. 
+	</p>
+	<p>
+	Over the summer, I was part of Rice's startup accelerator, called OwlSpark. Apart from spending 3 months doing that, I also visited my parents in Taiwan. 
+	Though I was only there for a week, I spent most of my time visiting relatives, eating stall food, and spending quality time with my dad playing golf.
+	I am a little disappointed that I only have a week of vacation, but I am glad to be back on campus! 
+	</p>
+	<p>
+	For the sake of this assignment, here is my <a href="https://www.linkedin.com/in/jeffrey-wang-78a35785?trk=nav_responsive_tab_profile_pic">LinkedIn page</a> 
+	and <a href="https://www.facebook.com/jeffreychwang">Facebook page</a> is provided below. 
+	</p>
+	
+	<form>
+		Comment:<br>
+
+		<input type="button" value="Clear" onclick="clearText()">
+			<textarea rows="10" cols="50" id="textArea">
+
+
+			 --- Enter your message here ---
+
+
+			</textarea>
+		<input type="submit" value="Submit">
+
+	</form>
+
+
+
+</body>
+</html>
